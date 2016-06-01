@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/wrap_layout"
+        android:layout_weight="0">
+
+        <LinearLayout
+            android:id="@+id/rest_type"
+            style="@style/top_layout"
+            android:clickable="false">
+
+            <TextView
+                style="@style/userText"
+                android:text="@string/text_check_in_time" />
+
+            <TextView
+                android:id="@+id/check_in_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_07_56" />
+        </LinearLayout>
+
+        <View style="@style/bg_line" />
+
+        <LinearLayout
+            android:id="@+id/rest_start_time"
+            style="@style/mid_layout"
+            android:clickable="false">
+
+            <TextView
+                style="@style/userText"
+                android:text="@string/check_in_position" />
+
+            <TextView
+                android:id="@+id/check_in_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/position_ny" />
+
+        </LinearLayout>
+
+        <View style="@style/bg_line" />
+
+        <LinearLayout
+            android:id="@+id/rest_end_time"
+            style="@style/mid_layout"
+            android:clickable="false">
+
+            <TextView
+                style="@style/userText"
+                android:text="@string/text_check_type" />
+
+            <com.rey.material.widget.Spinner
+                android:id="@+id/check_type"
+                style="@style/Material.Widget.Spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rd_style="@style/Material.Drawable.Ripple.Wave"
+                app:spn_arrowAnimClockwise="true"
+                app:spn_arrowSwitchMode="true" />
+        </LinearLayout>
+
+        <View style="@style/bg_line" />
+
+        <LinearLayout
+            android:id="@+id/rest_time"
+            style="@style/bottom_layout"
+            android:clickable="false">
+
+            <TextView
+                style="@style/userText"
+                android:text="@string/is_delay" />
+
+            <com.rey.material.widget.Spinner
+                android:id="@+id/is_delay"
+                style="@style/Material.Widget.Spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rd_style="@style/Material.Drawable.Ripple.Wave"
+                app:spn_arrowAnimClockwise="true"
+                app:spn_arrowSwitchMode="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/wrap_layout"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/rest_type_1"
+            style="@style/top_layout">
+
+            <TextView
+                style="@style/userText"
+                android:text="@string/check_out_time" />
+
+            <TextView
+                android:id="@+id/check_out_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_07_56" />
+        </LinearLayout>
+
+        <View style="@style/bg_line" />
+
+        <LinearLayout
+            android:id="@+id/rest_start_time_1"
+            style="@style/mid_layout"
+            android:clickable="false">
+
+            <TextView
+                style="@style/userText"
+                android:text="@string/check_out_position" />
+
+            <TextView
+                android:id="@+id/check_out_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/position_ny" />
+
+        </LinearLayout>
+
+        <View style="@style/bg_line" />
+
+        <View style="@style/bg_line" />
+
+        <LinearLayout
+            android:id="@+id/work_time"
+            style="@style/mid_layout"
+            android:clickable="false">
+
+            <TextView
+                style="@style/userText"
+                android:text="@string/work_long" />
+
+            <TextView
+                android:id="@+id/work_time_long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_4_hour" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/check_commit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/common_button_background"
+            android:text="@string/GPS_setting_commit_btn"
+            android:textColor="@color/colorText"
+            app:rd_enable="true"
+            app:rd_style="@style/Material.Drawable.Ripple.Wave" />
+    </LinearLayout>
+
+</LinearLayout>

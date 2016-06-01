@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/checkInButton"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="@string/bottom_button_check_in" />
+    <item
+        android:id="@+id/logBtn"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="@string/bottom_button_log" />
+    <item
+        android:id="@+id/requestRestBtn"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="@string/bottom_button_request" />
+    <item
+        android:id="@+id/noticeBtn"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="@string/bottom_button_notice" />
+    <item
+        android:id="@+id/settingBtn"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="@string/bottom_button_setting" />
+</menu>
